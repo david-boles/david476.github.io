@@ -1,0 +1,18 @@
+dark:
+  primary: "#ffffff"
+  primary2: "#eeeeee"
+  primary3: "#dddddd"
+  primary4: "#cccccc"
+  secondary: "#101010"
+  secondary2: "#202020"
+  secondary3: "#303028"
+  secondary4: "#404040"
+light:
+  primary: "#202020"
+  primary2: "#404040"
+  primary3: "#606060"
+  primary4: "#808080"
+  secondary: "#ffffff"
+  secondary2: "#f7f7f7"
+  secondary3: "#efefef"
+  secondary2: "#e7e7e7"

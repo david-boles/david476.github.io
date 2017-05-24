@@ -1,6 +1,3 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
 ---
+Welcome to my website, you can read the description above. The site has [just been launched]({% post_url 2017-05-23-site-launch %}) but you'll see more here soon!
