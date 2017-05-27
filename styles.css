@@ -11,12 +11,15 @@
   padding: 14px 0 0 0;
 }
 
-p a {
-  text-decoration: underline;
+p a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: #2e7d32;
   font-size: 1.04em;
 }
 
-p a:hover {
+p a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #43a047;
+}
+
+p a {
+  text-decoration: underline;
 }
