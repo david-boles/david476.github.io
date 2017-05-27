@@ -1,6 +1,21 @@
-{% include head/utf8.html %}
-{% include head/viewport.html %}
-{% include head/fonts.html %}
-{% include head/styles.html %}
-{% include head/title.html %}
-{% include head/description.html %}
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Viewport setup -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Fonts and icons -->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- <link href='//fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'> -->
+
+<!-- Site information -->
+<title>{% if page.title %}DB - {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+{% if page.description %}
+<meta name="description" content="{{ page.description }}">
+{% else %}
+<meta name="description" content="{{ site.description }}">
+{% endif %}

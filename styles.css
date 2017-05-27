@@ -1,0 +1,22 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#title-bar .nav-title {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 14px 0 0 0;
+}
+
+p a {
+  text-decoration: underline;
+  color: #2e7d32;
+  font-size: 1.04em;
+}
+
+p a:hover {
+  color: #43a047;
+}
