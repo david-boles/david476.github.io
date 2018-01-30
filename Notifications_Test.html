@@ -2,6 +2,9 @@
 <html>
 <body>
 
+
+<h1 id="text">Javascript has not been run.</h1>
+ 
 <script>
   function notifyMe() {
    // Let's check if the browser supports notifications
@@ -13,15 +16,17 @@
    // Let's check whether notification permissions have already been granted
    else if (Notification.permission === "granted") {
      // If it's okay let's create a notification
-     document.getElementById("text").textContent = "Sending notification!";
+     document.getElementById("text").textContent = "You already granted permission, sending!";
      var notification = new Notification("Hi there!");
    }
 
    // Otherwise, we need to ask the user for permission
    else if (Notification.permission !== 'denied') {
+     document.getElementById("text").textContent = "You have not denied permission, requesting!";
      Notification.requestPermission(function (permission) {
        // If the user accepts, let's create a notification
        if (permission === "granted") {
+         document.getElementById("text").textContent = "You granted permission, sending!";
          var notification = new Notification("Hi there!");
        }else {
          document.getElementById("text").textContent = "You denied or ignored the request.";
@@ -34,7 +39,6 @@
  }
  notifyMe();
 </script>
-<h1 id="text">Javascript has not executed.</h1>
 
 </body>
 </html> 
